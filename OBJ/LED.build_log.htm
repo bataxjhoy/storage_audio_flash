@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\hasee\Desktop\stm32f405\无线对讲\第二版\无线模块_存储音频\USER\LED.uvproj
+Project File Date:  05/29/2023
+
+<h2>Output:</h2>
+Build target 'LED'
+compiling main.c...
+..\HARDWARE\I2S\i2s.h(28): warning:  #1295-D: Deprecated declaration I2S3_TX_DMA_Init - give arg types
+  void I2S3_TX_DMA_Init( );
+..\HARDWARE\I2S\i2s.h(29): warning:  #1295-D: Deprecated declaration I2S3ext_RX_DMA_Init - give arg types
+  void I2S3ext_RX_DMA_Init( );
+main.c(24): warning:  #68-D: integer conversion resulted in a change of sign
+  u8 record_flag=-1;//缓存标志  
+main.c(25): warning:  #68-D: integer conversion resulted in a change of sign
+  u8 play_flag=-1;//缓存标志    
+main.c(78): warning:  #68-D: integer conversion resulted in a change of sign
+                                        play_flag=-1;
+main.c(89): warning:  #68-D: integer conversion resulted in a change of sign
+                                        play_flag=-1;
+main.c(108): warning:  #111-D: statement is unreachable
+                myfree(SRAMIN,i2srecbuf1);      //释放内存
+main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=16076 RO-data=1084 RW-data=264 ZI-data=1228120  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Error(s), 7 Warning(s).
+Load "..\\OBJ\\LED.axf" 
+Set JLink Project File to "C:\Users\hasee\Desktop\stm32f405\无线对讲\第二版\无线模块_存储音频\USER\JLinkSettings.ini"
+* JLink Info: Device "STM32F405RG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link V9 compiled Dec 13 2019 11:14:50
+Hardware: V9.40
+S/N : 59402791 
+Feature(s) : RDI, GDB, FlashDL, FlashBP, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F405RG
+VTarget = 3.324V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
